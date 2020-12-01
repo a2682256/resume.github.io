@@ -1,0 +1,335 @@
+html,
+body {
+  background-image: url("../images/123.jpg");
+  height: 4100px;
+}
+
+.sun {
+
+  position: absolute;
+  left: 82%;
+  top: 10px;
+}
+
+.me {
+  background-image: url("../images/background.jpg");
+  position: relative;
+  width: 60%;
+  height: 3600px;
+  left: 20%;
+  top: 200px;
+
+  background-color: white;
+  border: goldenrod 15px solid;
+
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.photo {
+  position: relative;
+  width: 30%;
+  height: 350px;
+  left: 5%;
+  top: 20px;
+
+  border: gainsboro 15px double;
+
+  text-align: center;
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+.word {
+  position: absolute;
+  width: 50%;
+  height: 350px;
+  left: 45%;
+  top: 240px;
+
+  border: gainsboro 15px double;
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: white;
+}
+
+.big {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.best {
+  position: relative;
+  width: 70%;
+  height: 150px;
+  left: 15%;
+  top: 50px;
+
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.skill {
+  position: relative;
+
+  width: 90%;
+  height: 660px;
+  left: 5%;
+  top: 30px;
+
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: white;
+  padding: 10px;
+  border: gainsboro 15px double;
+}
+
+* {
+  box-sizing: border-box
+}
+
+/* Container for skill bars */
+.container1 {
+  width: 40%;
+  height: 30px;
+  background-color: #ddd;
+  /* Grey background */
+}
+
+.skills {
+  text-align: right;
+  /* Right-align text */
+  padding-top: 10px;
+  /* Add top padding */
+  padding-bottom: 10px;
+  /* Add bottom padding */
+  color: white;
+  /* White text color */
+}
+
+.html {
+  width: 70%;
+  background-color: #4CAF50;
+}
+
+/* Green */
+.css {
+  width: 60%;
+  background-color: #2196F3;
+}
+
+/* Blue */
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+
+/* Red */
+.php {
+  width: 50%;
+  background-color: #808080;
+}
+
+/* Dark Grey */
+
+.progress-circle {
+  font-size: 40px;
+  margin: 20px;
+  position: relative;
+  /* so that children can be absolutely positioned */
+  padding: 0;
+  width: 5em;
+  height: 5em;
+  background-color: #F2E9E1;
+  border-radius: 50%;
+  line-height: 5em;
+  display: inline-block;
+}
+
+.progress-circle:after {
+  border: none;
+  position: absolute;
+  top: 0.35em;
+  left: 0.35em;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  width: 4.3em;
+  height: 4.3em;
+  background-color: white;
+  content: " ";
+}
+
+/* Text inside the control */
+.progress-circle span {
+  position: absolute;
+  line-height: 5em;
+  width: 5em;
+  text-align: center;
+  display: block;
+  color: #53777A;
+  z-index: 2;
+}
+
+.left-half-clipper {
+  /* a round circle */
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  /* needed for clipping */
+  clip: rect(0, 5em, 5em, 2.5em);
+  /* clips the whole left half*/
+}
+
+.right {
+  position: absolute;
+  width: 35%;
+  height: 500px;
+  left: 60%;
+  top: 100px;
+
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: white;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  max-width: 70%;
+  max-height: 10%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 300px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: relative;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: relative;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
